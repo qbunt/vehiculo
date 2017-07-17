@@ -30,10 +30,19 @@
     "type": {
       "type": "string",
       "required": true
+    },
+    "record": {
+      "type": "string"
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "records": {
+      "type": "hasMany",
+      "model": "Record",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

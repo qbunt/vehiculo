@@ -20,7 +20,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "vehicle": {
+      "type": "belongsTo",
+      "model": "Vehicle",
+      "foreignKey": "vehicle_id"
+    },
+    "servicer": {
+      "type": "belongsTo",
+      "model": "Servicer",
+      "foreignKey": "servicer_id"
+    }
+  },
   "acls": [],
   "methods": {}
 }
