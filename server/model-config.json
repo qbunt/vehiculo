@@ -42,5 +42,9 @@
   "Servicer": {
     "dataSource": "db",
     "public": true
+  },
+  "Record": {
+    "dataSource": "db",
+    "public": true
   }
 }
