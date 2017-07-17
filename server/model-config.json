@@ -38,5 +38,9 @@
   "Vehicle": {
     "dataSource": "db",
     "public": true
+  },
+  "Servicer": {
+    "dataSource": "db",
+    "public": true
   }
 }
