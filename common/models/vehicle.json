@@ -1,0 +1,39 @@
+{
+  "name": "Vehicle",
+  "plural": "Vehicles",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "vin": {
+      "type": "string",
+      "required": true
+    },
+    "make": {
+      "type": "string",
+      "required": true
+    },
+    "model": {
+      "type": "string",
+      "required": true
+    },
+    "color": {
+      "type": "string",
+      "required": true
+    },
+    "year": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
