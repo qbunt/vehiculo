@@ -30,9 +30,6 @@
     "type": {
       "type": "string",
       "required": true
-    },
-    "record": {
-      "type": "string"
     }
   },
   "validations": [],

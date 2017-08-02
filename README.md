@@ -1,3 +1,3 @@
-# Vehiculo
+## Vehiculo
 
-A new kind of tracking system.
+This is a self-driven project to learn Loopback and put it into use.

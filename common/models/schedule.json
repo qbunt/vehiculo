@@ -1,33 +1,35 @@
 {
-  "name": "Servicer",
-  "plural": "Servicers",
+  "name": "Schedule",
+  "plural": "schedules",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "name": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "phone": {
+    "description": {
       "type": "string",
       "required": true
     },
-    "website": {
-      "type": "string"
+    "due": {
+      "type": "number",
+      "required": true
     },
-    "location": {
-      "type": "geopoint",
+    "interval": {
+      "type": "number",
       "required": true
     }
   },
   "validations": [],
   "relations": {
-    "records": {
-      "type": "hasMany",
-      "model": "Record"
+    "vehicle": {
+      "type": "belongsTo",
+      "model": "Vehicle",
+      "foreignKey": "vehicleID"
     }
   },
   "acls": [],

@@ -1,6 +1,6 @@
 {
   "name": "Record",
-  "plural": "Records",
+  "plural": "records",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -11,12 +11,24 @@
       "type": "string",
       "required": true
     },
+    "description": {
+      "type": "string",
+      "required": true
+    },
     "date": {
       "type": "date",
       "required": true
     },
-    "description": {
+    "file": {
       "type": "string"
+    },
+    "self-installed": {
+      "type": "boolean",
+      "default": false
+    },
+    "mileage": {
+      "type": "number",
+      "required": true
     }
   },
   "validations": [],
@@ -24,12 +36,7 @@
     "vehicle": {
       "type": "belongsTo",
       "model": "Vehicle",
-      "foreignKey": "vehicle_id"
-    },
-    "servicer": {
-      "type": "belongsTo",
-      "model": "Servicer",
-      "foreignKey": "servicer_id"
+      "foreignKey": "vehicleId"
     }
   },
   "acls": [],
